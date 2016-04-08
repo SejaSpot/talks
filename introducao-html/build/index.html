@@ -19,16 +19,20 @@
           <p>Essa palestra foi feita pensando numa abordagem prática .</p>
           <p>O objetivo é mostrar assuntos de maneira introdutória e direcionar pontos para aprofundamento .</p>
         </section>
+        <section>
+          <h2>O que iremos ver ?</h2>
+          <ol>
+            <li>O que é, o que come, onde vive ?</li>
+            <li>Metadados</li>
+            <li>Microdados</li>
+            <li>Semântica e sua importância</li>
+            <li>Tags comumente usadas</li>
+            <ul>
+              <li>a</li>
+            </ul>
+          </ol>
+        </section>
         <section class="reveal">
-          <section>
-            <h2>O que iremos ver ?</h2>
-            <ol>
-              <li>O que é, o que come, onde vive ?</li>
-              <li>Metadados</li>
-              <li>Semântica e sua importância</li>
-              <li>Algumas tags</li>
-            </ol>
-          </section>
           <section>
             <h4>O que é, o que come, onde vive ?</h4><img src="./img/sergio-chapelin-globo-reporter.jpg">
           </section>
@@ -56,6 +60,25 @@
 <meta name="author" content="Diego Ramos">
 <meta name="robots" content="index,follow">
 </head></code></pre><small>Informações como Title e Description por exemplo, são usadas pelos mecanismos de busca para montar uma SERP (Search Engine Results Page).</small>
+        </section>
+        <section class="reveal">
+          <h4>Microdados</h4><small>Os Microdados são atributos colocados nas tags do HTML com informações para complementar seu significado. O Google dá um exemplo muito interessante. Veja abaixo um texto sobre uma determinada pessoa:</small>
+          <pre><code><div>
+Meu nome é Bob Smith, mas todos me chamam de Smithy. Esta é a minha página inicial:
+<a href="http://www.example.com">www.example.com</a>
+Moro em Albuquerque, Novo México, e trabalho como engenheiro na ACME Corp.
+</div></code></pre><br><small>Agora esse mesmo código recheado de Microdados:</small>
+          <pre><code><div itemscope itemtype="http://data-vocabulary.org/Person">
+Meu nome é <span itemprop="name">Bob Smith</span>
+mas todos me chamam de <span itemprop="nickname">Smithy</span>.
+Esta é a minha página inicial:
+<a href="http://www.example.com" itemprop="url">www.example.com</a>
+Moro em Albuquerque, Novo México, e trabalho como <span itemprop="title">engenheiro</span>
+na <span itemprop="affiliation">ACME Corp</span>.
+</div></code></pre>
+        </section>
+        <section class="reveal">
+          <h3>LA</h3>
         </section>
       </div>
     </div>
