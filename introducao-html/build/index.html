@@ -12,34 +12,50 @@
     <div class="reveal">
       <div class="slides">
         <section class="reveal">
-          <h2>Prazer, HTML</h2><img src="./img/html5_logo.png" height="350">
+          <h2>Prazer, HTML</h2><img src="./img/html5-logo.png" height="350">
           <p><small>Por&nbsp;<a href="http://github.com/rdiego26" target="_blank">Diego Ramos</a></small></p>
+        </section>
+        <section class="reveal"><img src="./img/disclaimer.jpg" height="250">
+          <p>Essa palestra foi feita pensando numa abordagem prática .</p>
+          <p>O objetivo é mostrar assuntos de maneira introdutória e direcionar pontos para aprofundamento .</p>
         </section>
         <section class="reveal">
           <section>
             <h2>O que iremos ver ?</h2>
             <ol>
-              <li>Um pouco sobre história</li>
-              <li>Evitando modificações em objetos</li>
-              <li>Padrões ( é por isso que estamos aqui, certo? )
-                <ol>
-                  <li>Constructor</li>
-                  <li>Namespace</li>
-                  <li>Chaining</li>
-                  <li>Clojure</li>
-                </ol>
-              </li>
+              <li>O que é, o que come, onde vive ?</li>
+              <li>Metadados</li>
+              <li>Semântica e sua importância</li>
+              <li>Algumas tags</li>
             </ol>
           </section>
           <section>
-            <h1>Slide 2 - 2</h1>
-            <ul>
-              <li>item1</li>
-              <li>item2</li>
-              <li>item3</li>
-              <li>item4</li>
-            </ul>
+            <h4>O que é, o que come, onde vive ?</h4><img src="./img/sergio-chapelin-globo-reporter.jpg">
           </section>
+          <section class="reveal">
+            <h4>Camadas client-side</h4>
+            <ol>
+              <li>A informação, que é o HTML que vai exibi-la na página.</li>
+              <li>CSS, que vai formatar esse HTML de forma que fique legível, usável, bonito.</li>
+              <li>Definição de comportamento desses elementos, que é o Javascript e Ajax.</li>
+            </ol><br>
+            <p>Deles o HTML é mais importante. É o HTML que cuida da exibição da formatação.</p>
+            <p>É ele que serve os <strong>buscadores</strong> e <strong>leitores de tela</strong>.</p>
+            <p>É ele que serve a informação para aplicações e te dão toda a informação que você busca na web todos os dias.</p>
+          </section>
+        </section>
+        <section class="reveal">
+          <h3>Metadados</h3>
+          <p>Os Metadados são um conjunto de informações a respeito da página e do conteúdo nela publicado.</p>
+          <p>Essas informações são usadas pelos navegadores e user-agents em geral, normalmente sendo invisíveis para os usuários.</p>
+          <pre><code><head>
+<meta charset="utf-8">
+<title>Entendo a estrutura e semântica do HTML5</title>
+<meta name="keywords" content="HTML5, Palestra HTML, HTML">
+<meta name="description" content="Palestra sobre HTML.">
+<meta name="author" content="Diego Ramos">
+<meta name="robots" content="index,follow">
+</head></code></pre><small>Informações como Title e Description por exemplo, são usadas pelos mecanismos de busca para montar uma SERP (Search Engine Results Page).</small>
         </section>
       </div>
     </div>
