@@ -1,22 +1,39 @@
-section.reveal
-    h4 Microdados
-    small Os Microdados são atributos colocados nas tags do HTML com informações para complementar seu significado. O Google dá um exemplo muito interessante. Veja abaixo um texto sobre uma determinada pessoa:
-    pre
-        code
-            | <div>
-            | Meu nome é Bob Smith, mas todos me chamam de Smithy. Esta é a minha página inicial:
-            | <a href="http://www.example.com">www.example.com</a>
-            | Moro em Albuquerque, Novo México, e trabalho como engenheiro na ACME Corp.
-            | </div>
-    br
-    small Agora esse mesmo código recheado de Microdados:
-    pre
-        code
-            | <div itemscope itemtype="http://data-vocabulary.org/Person">
-            | Meu nome é <span itemprop="name">Bob Smith</span>
-            | mas todos me chamam de <span itemprop="nickname">Smithy</span>.
-            | Esta é a minha página inicial:
-            | <a href="http://www.example.com" itemprop="url">www.example.com</a>
-            | Moro em Albuquerque, Novo México, e trabalho como <span itemprop="title">engenheiro</span>
-            | na <span itemprop="affiliation">ACME Corp</span>.
-            | </div>
+section
+    section.reveal
+        h4 Microdados
+
+    section
+        h3 Microdados
+        p A especificação de Microdados do HTML define um mecanismo que permite que máquinas – leia-se meios de acesso como scripts, aparelhos, sistemas, serviços etc – reconheçam dados que possam ser embedados em documentos HTML de uma forma fácil.
+        p Esses dados devem ser legíveis para seres humanos e para máquinas, sendo também compatíveis com outros formatos de dados existentes como&nbsp;
+            a(href='https://www.w3.org/RDF/' target='_blank') RDF&nbsp;
+            | ou&nbsp;
+            a(href='http://www.json.org/' target='_blank') JSON
+            | .
+
+    section
+        h3 Microdados
+        p Os Microdados são atributos colocados nas tags do HTML com informações para complementar seu significado. O Google dá um exemplo muito interessante. Veja abaixo um texto sobre uma determinada pessoa:
+        pre
+            code
+                | <div>
+                | Meu nome é Bob Smith, mas todos me chamam de Smithy. Esta é a minha página inicial:
+                | <a href="http://www.example.com">www.example.com</a>
+                | Moro em Albuquerque, Novo México, e trabalho como engenheiro na ACME Corp.
+                | </div>
+        br
+
+    section
+        h3 Microdados
+        p Agora esse mesmo código recheado de Microdados:
+        pre
+            code
+                | <div itemscope itemtype="http://data-vocabulary.org/Person">
+                | Meu nome é <span itemprop="name">Bob Smith</span>
+                | mas todos me chamam de <span itemprop="nickname">Smithy</span>.
+                | Esta é a minha página inicial:
+                | <a href="http://www.example.com" itemprop="url">www.example.com</a>
+                | Moro em Albuquerque, Novo México, e trabalho como <span itemprop="title">engenheiro</span>
+                | na <span itemprop="affiliation">ACME Corp</span>.
+                | </div>
+        img(src='./img/simple-like-a-boss-meme.jpg', height='200')
