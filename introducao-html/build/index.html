@@ -35,21 +35,23 @@
           </section>
           <section class="reveal">
             <h4>Camadas client-side</h4>
+            <p>São compostas por três camadas:</p>
             <ol>
               <li>A informação, que é o HTML que vai exibi-la na página.</li>
               <li>CSS, que vai formatar esse HTML de forma que fique legível, usável, bonito.</li>
               <li>Definição de comportamento desses elementos, que é o Javascript e Ajax.</li>
-            </ol><br>
-            <p>Deles o HTML é mais importante. É o HTML que cuida da exibição da formatação.</p>
-            <p>É ele que serve os <strong>buscadores</strong> e <strong>leitores de tela</strong>.</p>
-            <p>É ele que serve a informação para aplicações e te dão toda a informação que você busca na web todos os dias.</p>
+            </ol><br><br><small>Deles o HTML é mais importante. É o HTML que cuida da exibição da formatação.</small><small>É ele que serve os <strong>buscadores</strong> e <strong>leitores de tela</strong>.</small><small>É ele que serve a informação para aplicações e te dão toda a informação que você busca na web todos os dias.</small>
           </section>
         </section>
         <section class="reveal">
-          <h3>Metadados</h3>
-          <p>Os Metadados são um conjunto de informações a respeito da página e do conteúdo nela publicado.</p>
-          <p>Essas informações são usadas pelos navegadores e user-agents em geral, normalmente sendo invisíveis para os usuários.</p>
-          <pre><code><head>
+          <section>
+            <h3>Metadados</h3><img src="./img/metadata-everywhere-meme.jpg">
+          </section>
+          <section>
+            <h3>Metadados</h3>
+            <p>Os Metadados são um conjunto de informações a respeito da página e do conteúdo nela publicado.</p>
+            <p>Essas informações são usadas pelos navegadores e user-agents em geral, normalmente sendo invisíveis para os usuários.</p>
+            <pre><code><head>
 <meta charset="utf-8">
 <title>Entendo a estrutura e semântica do HTML5</title>
 <meta name="keywords" content="HTML5, Palestra HTML, HTML">
@@ -57,6 +59,7 @@
 <meta name="author" content="Diego Ramos">
 <meta name="robots" content="index,follow">
 </head></code></pre><small>Informações como Title e Description por exemplo, são usadas pelos mecanismos de busca para montar uma SERP (Search Engine Results Page).</small>
+          </section>
         </section>
         <section>
           <section class="reveal">
@@ -106,6 +109,29 @@ na <span itemprop="affiliation">ACME Corp</span>.
           <section>
             <h3>Semântica e sua importância</h3>
             <p>No HTML5 foram criadas diversas tags semânticas para indicar aos user-agents quais conteúdos estão sendo inseridos em cada uma das divisão da página, organizando e padronizando o desenvolvimento.</p><img src="./img/anatomia-do-HTML5.png">
+          </section>
+          <section>
+            <h3>Cabeçalho com o elemento header</h3><small>O novo elemento<strong>header</strong>&nbsp;do HTML5 é usado para definir o cabeçalho de uma página ou sessão, e pode conter logo, títulos, menu de navegação, campo de busca, etc.</small>
+            <pre><code><header>
+ <img alt="logo" src="/img/logo.png">
+ <h1>Entendo a estrutura e semântica do HTML5</h1>
+ <form action="www.enderecodosite.com.br/search" id="searchform" method="get">
+  <label for="s">Pesquisa</label>
+  <input type="text" placeholder="Pesquisa" id="s">
+  <input type="submit" value="Pesquisa" class="submit">
+ </form>
+</header></code></pre>
+          </section>
+          <section>
+            <h3>Navegação Global com o elemento nav</h3><small>O novo elemento nav do HTML5 serve para agrupar uma lista de links para outras partes do site, seja essa lista de navegação local ou global. Esses blocos de links podem estar em diferentes partes do layout, como no cabeçalho ou no rodapé.</small>
+            <pre><code><nav>
+ <ul class="menu">
+  <li><a href="inicio.html">Início</a></li>
+  <li><a href="quem-somos.html">Quem somos</a></li>
+  <li><a href="servicos.html">Serviços</a></li>
+  <li><a href="contato.html">Contato</a></li>
+ </ul>
+</nav></code></pre><img src="./img/meme-ok-dedao.png" height="130" class="fragment">
           </section>
         </section>
       </div>
