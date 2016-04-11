@@ -143,6 +143,109 @@ na <span itemprop="affiliation">ACME Corp</span>.
 </section></code></pre>
           </section>
         </section>
+        <section class="reveal">
+          <section>
+            <h1>Tags</h1><img src="./img/tag-soup.jpg">
+          </section>
+          <section>
+            <h2><a href="http://www.w3.org/TR/html4/struct/links.html#edef-A" target="_blank">a</a></h2>
+            <p>Define a âncora de um elemento.</p>
+            <pre><code><a href="http://sejaspot.com.br" target="_blank">Spot</a></code></pre>
+          </section>
+          <section>
+            <h2><a href="http://www.w3.org/TR/html4/struct/global.html#edef-SPAN" target="_blank">span</a></h2>
+            <p>Div e Span definem a estrutura dos elementos. Div é um elemento de bloco e Span um elemento de linha.</p>
+            <pre><code><div>
+  <span>Texto</span>
+</div></code></pre>
+          </section>
+          <section>
+            <h2><a href="http://www.w3.org/TR/html4/struct/global.html#edef-H1" target="_blank">h1..h6</a></h2>
+            <p>Grupo de títulos definidos por importância, onde o H1 é o mais importante e o H6 o menos importante.</p>
+            <pre><code><h1>Texto</h1></code></pre>
+          </section>
+          <section>
+            <h2><a href="http://www.w3.org/TR/html4/struct/lists.html#edef-LI" target="_blank">ul,ol,li</a></h2>
+            <p>Listas ordenadas (OL) e listas não ordenadas (UL) são utilizadas para definir e criar listas de itens.</p>
+          </section>
+          <section>
+            <h2><a href="http://www.w3.org/TR/html4/struct/text.html#edef-P" target="_blank">p</a></h2>
+            <p>Define um parágrafo.</p>
+          </section>
+          <section>
+            <h2>Inputs</h2>
+            <p>Essa tag, talvez é uma das mais importantes e que tem tido mais melhorias nas atualizações do HTML.</p>
+          </section>
+          <section>
+            <h2>password</h2>
+            <p>Utilizamos esse tipo para disponibilizar a inserção de dados que serão mascarados .</p>
+            <pre><code><label for="senha">Senha: </label>
+<input type="password" id="senha" name="senha" required="true" maxlength="10" pattern="[A-Za-z]{10}"></code></pre>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required="true" maxlength="10" pattern="[A-Za-z]{10}">
+          </section>
+          <section>
+            <h2>email</h2>
+            <p>Utilizamos esse tipo para disponibilizar a inserção de um endereço de e-mail válido .</p>
+            <pre><code><label for="email">Email: </label>
+<input type="email" id="email" name="email" required="true" autocomplete="on"></code></pre>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="true" autocomplete="on">
+          </section>
+          <section>
+            <h2>tel</h2>
+            <p>Esse input foi criado para trabalhar com telefones, porém, como existem diversos padrões de telefones não há uma validação, apenas através do atributo pattern.</p>
+            <p>O uso dele é apenas para semântica.</p>
+            <pre><code><label for="tel">Telefone: </label>
+<input type="tel" id="telefone" name="telefone" required="true" autocomplete="on"></code></pre>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required="true" autocomplete="on">
+          </section>
+          <section>
+            <h2>url</h2>
+            <p>Esse tipo valida URLs.</p>
+            <pre><code><label for="url">URL: </label>
+<input type="url" id="url" name="url" required="true" autocomplete="on"></code></pre>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" required="true" autocomplete="on">
+          </section>
+          <section>
+            <h2>number</h2>
+            <p>Esse tipo trabalha com strings que no envio serão transformados em números, o input também disponibilizará setas para incrementar e decrementar o valor do campo.</p>
+            <pre><code><label for="number">Número: </label>
+<input type="number" id="number" name="number"></code></pre>
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number">
+          </section>
+          <section>
+            <h2>range</h2>
+            <p>Esse tipo quanto ao valor retornado trabalha igualmente o Number mas visualmente é mostrado um slider.</p>
+            <pre><code><label for="range">Range: </label>
+<input type="range" id="range" name="range" max="30" min="2" step="2"></code></pre>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" max="30" min="2" step="2">
+          </section>
+          <section>
+            <h2>search</h2>
+            <p>Bom suporte, inclusive alguns browsers estilizando o mesmo ( lupa dentro do input ) e também tem uma boa semântica.</p>
+            <pre><code><label for="search">Search: </label>
+<input type="search" id="search" name="search"></code></pre>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+          </section>
+          <section>
+            <h2>color</h2>
+            <p>Ótimo suporte, implementa um colorpicker, o valor da cor retornado é em hexadecimal.</p>
+            <pre><code><label for="color">Color: </label>
+<input type="color" id="color" name="color"></code></pre>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+          </section>
+          <section><img src="./img/spider-man-facepalm.jpeg"></section>
+        </section>
+        <section>
+          <p>Obrigado!</p><img src="./img/logo-spot-branco.png" height="200">
+        </section>
       </div>
     </div>
     <script src="js/vendor/head.min.js"></script>

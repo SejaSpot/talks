@@ -1,0 +1,137 @@
+section.reveal
+    section
+        h1 Tags
+        img(src='./img/tag-soup.jpg')
+
+    section
+        h2
+            a(href='http://www.w3.org/TR/html4/struct/links.html#edef-A' target='_blank') a
+        p Define a âncora de um elemento.
+        pre
+            code
+                | <a href="http://sejaspot.com.br" target="_blank">Spot</a>
+
+    section
+        h2
+            a(href='http://www.w3.org/TR/html4/struct/global.html#edef-SPAN' target='_blank') span
+        p Div e Span definem a estrutura dos elementos. Div é um elemento de bloco e Span um elemento de linha.
+        pre
+            code
+                | <div>
+                |   <span>Texto</span>
+                | </div>
+
+    section
+        h2
+            a(href='http://www.w3.org/TR/html4/struct/global.html#edef-H1' target='_blank') h1..h6
+        p Grupo de títulos definidos por importância, onde o H1 é o mais importante e o H6 o menos importante.
+        pre
+            code
+                | <h1>Texto</h1>
+
+    section
+        h2
+            a(href='http://www.w3.org/TR/html4/struct/lists.html#edef-LI' target='_blank') ul,ol,li
+        p Listas ordenadas (OL) e listas não ordenadas (UL) são utilizadas para definir e criar listas de itens.
+
+    section
+        h2
+            a(href='http://www.w3.org/TR/html4/struct/text.html#edef-P' target='_blank') p
+        p Define um parágrafo.
+
+    section
+        h2 Inputs
+        p Essa tag, talvez é uma das mais importantes e que tem tido mais melhorias nas atualizações do HTML.
+
+    section
+        h2 password
+        p Utilizamos esse tipo para disponibilizar a inserção de dados que serão mascarados .
+        pre
+            code
+                | <label for="senha">Senha: </label>
+                | <input type="password" id="senha" name="senha" required="true" maxlength="10" pattern="[A-Za-z]{10}">
+        label(for="senha")
+            | Senha:
+        input(type="password" id="senha" name="senha" required="true" maxlength="10" pattern="[A-Za-z]{10}")
+
+    section
+        h2 email
+        p Utilizamos esse tipo para disponibilizar a inserção de um endereço de e-mail válido .
+        pre
+            code
+                | <label for="email">Email: </label>
+                | <input type="email" id="email" name="email" required="true" autocomplete="on">
+        label(for="email")
+            | Email:
+        input(type="email" id="email" name="email" required="true" autocomplete="on")
+
+    section
+        h2 tel
+        p Esse input foi criado para trabalhar com telefones, porém, como existem diversos padrões de telefones não há uma validação, apenas através do atributo pattern.
+        p O uso dele é apenas para semântica.
+        pre
+            code
+                | <label for="tel">Telefone: </label>
+                | <input type="tel" id="telefone" name="telefone" required="true" autocomplete="on">
+        label(for="telefone")
+            | Telefone:
+        input(type="tel" id="telefone" name="telefone" required="true" autocomplete="on")
+
+    section
+        h2 url
+        p Esse tipo valida URLs.
+        pre
+            code
+                | <label for="url">URL: </label>
+                | <input type="url" id="url" name="url" required="true" autocomplete="on">
+        label(for="url")
+            | URL:
+        input(type="url" id="url" name="url" required="true" autocomplete="on")
+
+    section
+        h2 number
+        p Esse tipo trabalha com strings que no envio serão transformados em números, o input também disponibilizará setas para incrementar e decrementar o valor do campo.
+        pre
+            code
+                | <label for="number">Número: </label>
+                | <input type="number" id="number" name="number">
+        label(for="number")
+            | Número:
+        input(type="number" id="number" name="number")
+
+    section
+        h2 range
+        p Esse tipo quanto ao valor retornado trabalha igualmente o Number mas visualmente é mostrado um slider.
+        pre
+            code
+                | <label for="range">Range: </label>
+                | <input type="range" id="range" name="range" max="30" min="2" step="2">
+        label(for="range")
+            | Range:
+        input(type="range" id="range" name="range" max="30" min="2" step="2")
+
+    section
+        h2 search
+        p Bom suporte, inclusive alguns browsers estilizando o mesmo ( lupa dentro do input ) e também tem uma boa semântica.
+        pre
+            code
+                | <label for="search">Search: </label>
+                | <input type="search" id="search" name="search">
+        label(for="search")
+            | Search:
+        input(type="search" id="search" name="search")
+
+    section
+        h2 color
+        p Ótimo suporte, implementa um colorpicker, o valor da cor retornado é em hexadecimal.
+        pre
+            code
+                | <label for="color">Color: </label>
+                | <input type="color" id="color" name="color">
+        label(for="color")
+            | Color:
+        input(type="color" id="color" name="color")
+
+    section
+        img(src='./img/spider-man-facepalm.jpeg')
+
